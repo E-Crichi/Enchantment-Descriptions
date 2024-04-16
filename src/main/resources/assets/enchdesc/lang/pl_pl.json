@@ -1,7 +1,7 @@
 {
   "_comment": "Opisy zaklęć i klątw z Vanilli",	
   "tooltip.enchdesc.addedby": "Dodane przez: %s",
-  "tooltip.enchdesc.activate": "Naciśnij %s%s%s, aby wyświetlić opisy zaklęć.",
+  "tooltip.enchdesc.activate": "Naciśnij %s, aby wyświetlić opisy zaklęć.",
   "enchdesc.fatalerror": "Błąd: Zobacz plik log",	
   "key.enchdesc.show": "Pokaż Opis",
   "key.enchdesc.title": "Opisy Zaklęć",

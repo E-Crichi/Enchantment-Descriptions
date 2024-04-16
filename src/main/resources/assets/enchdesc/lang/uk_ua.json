@@ -1,7 +1,7 @@
 {
   "_comment": "Mod Localizations",
   "tooltip.enchdesc.addedby": "Додано користувачем: %s",
-  "tooltip.enchdesc.activate": "Нажміть %s%s%s для опису зачарувань.",
+  "tooltip.enchdesc.activate": "Нажміть %s для опису зачарувань.",
   "enchdesc.fatalerror": "Помилка: перегляньте файл логів",	
   "key.enchdesc.show": "Показати опис",
   "key.enchdesc.title": "Опис зачарування",

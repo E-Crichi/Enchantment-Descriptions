@@ -1,7 +1,7 @@
 {
   "_comment": "原版附魔描述",
   "tooltip.enchdesc.addedby": "来源: %s",
-  "tooltip.enchdesc.activate": "按下%s%s%s查看附魔描述.",
+  "tooltip.enchdesc.activate": "按下%s查看附魔描述.",
   "enchantment.minecraft.protection.desc": "减少大多数伤害.",
   "enchantment.minecraft.fire_protection.desc": "减少火焰伤害,也减少了燃烧时间.",
   "enchantment.minecraft.feather_falling.desc": "减少摔落伤害和来源于末影珍珠的传送伤害.",

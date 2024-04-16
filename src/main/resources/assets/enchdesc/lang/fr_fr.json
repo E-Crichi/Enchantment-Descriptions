@@ -3,7 +3,7 @@
 
     "_comment": "Infobulle d'enchantement",
     "tooltip.enchdesc.addedby": "Ajouté par: %s",
-    "tooltip.enchdesc.activate": "Appuyez sur %s%s%s pour les descriptions d'enchantement.",
+    "tooltip.enchdesc.activate": "Appuyez sur %s pour les descriptions d'enchantement.",
 
     "_comment": "Descriptions d'enchantement vanille",
     "enchantment.minecraft.protection.desc": "Réduit les dégâts de la plupart des sources.",

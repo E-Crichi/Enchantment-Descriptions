@@ -1,7 +1,7 @@
 {
   "_comment": "Vanilla Förtrollningsbeskrivningar",	
   "tooltip.enchdesc.addedby": "Tillagd av: %s",
-  "tooltip.enchdesc.activate": "Tryck på %s%s%s för att se förtrollningsbeskrivningar.",
+  "tooltip.enchdesc.activate": "Tryck på %s för att se förtrollningsbeskrivningar.",
   "enchdesc.fatalerror": "Error: Kolla log filen",	
   "enchantment.minecraft.protection.desc": "Minskar skada från de flesta typer av skador.",
   "enchantment.minecraft.fire_protection.desc": "Minskar eldskadan spelaren får. Reducerar också tiden det tar för att sluta brinna.",

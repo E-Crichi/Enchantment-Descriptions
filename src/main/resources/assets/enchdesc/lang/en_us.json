@@ -1,7 +1,7 @@
 {
   "_comment": "Mod Localizations",
   "tooltip.enchdesc.addedby": "Added by: %s",
-  "tooltip.enchdesc.activate": "Press %s%s%s for enchantment descriptions.",
+  "tooltip.enchdesc.activate": "Press %s for enchantment descriptions.",
   "enchdesc.fatalerror": "Error: See log file",	
   "key.enchdesc.show": "Show Description",
   "key.enchdesc.title": "Enchantment Descriptions",

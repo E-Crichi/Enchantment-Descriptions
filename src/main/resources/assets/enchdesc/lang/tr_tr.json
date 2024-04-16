@@ -3,7 +3,7 @@
 
     "_comment": "Enchantment Tooltip",
     "tooltip.enchdesc.addedby": "Ekleyen: %s",
-    "tooltip.enchdesc.activate": "%s%s%s tuşuna basarak büyü açıklamalarını görün.",
+    "tooltip.enchdesc.activate": "%s tuşuna basarak büyü açıklamalarını görün.",
 
     "_comment": "Vanilla Enchantment Descriptions",
     "enchantment.minecraft.protection.desc": "Çoğu hasar türlerinden alınan hasarı azaltır.",

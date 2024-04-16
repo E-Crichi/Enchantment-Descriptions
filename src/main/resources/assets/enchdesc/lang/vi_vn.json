@@ -1,7 +1,7 @@
 {
   "_comment": "Bản địa hóa Mod",
   "tooltip.enchdesc.addedby": "Thêm bởi: %s",
-  "tooltip.enchdesc.activate": "nhấn %s%s%s để xem mô tả.",
+  "tooltip.enchdesc.activate": "nhấn %s để xem mô tả.",
   "enchdesc.fatalerror": "Lỗi: Xem tệp nhật ký",	
   "key.enchdesc.show": "Hiển thị mô tả",
   "key.enchdesc.title": "Mô tả phù phép",
