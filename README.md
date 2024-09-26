@@ -1,24 +1,41 @@
-# [Enchantment-Descriptions](https://minecraft.curseforge.com/projects/enchantment-descriptions)
+<!-- name-start -->
+# EnchantmentDescriptions [![CurseForge Project](https://img.shields.io/curseforge/dt/250419?logo=curseforge&label=CurseForge&style=flat-square&labelColor=2D2D2D&color=555555)](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) [![Modrinth Project](https://img.shields.io/modrinth/dt/UVtY3ZAC?logo=modrinth&label=Modrinth&style=flat-square&labelColor=2D2D2D&color=555555)](https://modrinth.com/mod/enchantment-descriptions) [![Maven Project](https://img.shields.io/maven-metadata/v?style=flat-square&logoColor=D31A38&labelColor=2D2D2D&color=555555&label=Latest&logo=gradle&metadataUrl=https%3A%2F%2Fmaven.blamejared.com%2Fnet%2Fdarkhax%2Fenchdesc%2Fenchdesc-common-1.21.1%2Fmaven-metadata.xml)](https://maven.blamejared.com/net/darkhax/enchdesc)
+<!-- name-end -->
+<!-- description-start -->
+Adds descriptions of enchantment effects to their descriptions. The documentation for this mod can be found [here](https://docs.darkhax.net/mods/enchantment-descriptions/).
+<!-- description-end -->
 
-When this mod is installed enchanted items will display a brief description of their enchantment effects in their
-tooltip.
+<!-- maven-start -->
+## Maven Dependency
 
-## FaQ
+If you are using [Gradle](https://gradle.org) to manage your dependencies, add the following into your `build.gradle` file. Make sure to replace the version with the correct one. All versions can be viewed [here](https://maven.blamejared.com/net/darkhax/enchdesc).
 
-### Does this support modded enchantments?
+```gradle
+repositories {
+    maven { 
+        url 'https://maven.blamejared.com'
+    }
+}
 
-Yes, it is possible for modded enchantments to work with this mod, and many mods already include support for this mod!
-If an enchantment description is not being displayed feel free to request support from me using
-the [issue tracker](https://github.com/Darkhax-Minecraft/Enchantment-Descriptions/issues).
+dependencies {
+    // NeoForge
+    implementation group: 'net.darkhax.enchdesc', name: 'enchdesc-neoforge-1.21.1', version: '21.1.0'
 
-### The tooltip is going off the side of my screen?
+    // Forge
+    implementation group: 'net.darkhax.enchdesc', name: 'enchdesc-forge-1.21.1', version: '21.1.0'
 
-This is a vanilla bug that only affects Fabric users. Affected players will need to download a mod
-like [ToolTipFix](https://www.curseforge.com/minecraft/mc-mods/tooltipfix) which patches this bug for Fabric. Forge
-users will not experience this issue because Forge includes a built in fix for this bug.
+    // Fabric & Quilt
+    modImplementation group: 'net.darkhax.enchdesc', name: 'enchdesc-fabric-1.21.1', version: '21.1.0'
 
-### How do I add new descriptions?
+    // Common / MultiLoader / Vanilla
+    compileOnly group: 'net.darkhax.enchdesc', name: 'enchdesc-common-1.21.1', version: '21.1.0'
+}
+```
+<!-- maven-end -->
 
-The descriptions shown by this mod are taken from the localization map. Adding support for a new enchantment is as easy
-as adding the expected entry to your localization file. The expected localization key format
-is `enchantment.%MOD_ID%.%ENCH_ID%.desc`.
+<!-- sponsor-start -->
+## Sponsors
+
+[![](https://assets.blamejared.com/nodecraft/darkhax.jpg)](https://nodecraft.com/r/darkhax)    
+EnchantmentDescriptions is sponsored by Nodecraft. Use code **[DARKHAX](https://nodecraft.com/r/darkhax)** for 30% of your first month of service!
+<!-- sponsor-end -->
