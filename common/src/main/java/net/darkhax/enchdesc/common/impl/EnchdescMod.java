@@ -15,6 +15,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentUtils;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.contents.PlainTextContents;
+import net.minecraft.network.chat.contents.TranslatableContents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.EnchantedBookItem;
 import net.minecraft.world.item.ItemStack;
@@ -77,7 +78,7 @@ public class EnchdescMod {
                         if (fullName.equals(line)) {
                             final int index = lines.indexOf(line);
                             if (index != -1) {
-                                MutableComponent description = getDescription(key.location(), entry.getIntValue());
+                                MutableComponent description = getDescription(entry.getKey(), key.location(), entry.getIntValue());
                                 if (description != null) {
                                     ComponentUtils.mergeStyles(description, config.style);
                                     lines.add(index + 1, config.prefix.copy().append(description).append(config.suffix));
@@ -93,8 +94,17 @@ public class EnchdescMod {
 
     @Nullable
     @OnlyFor(PhysicalSide.CLIENT)
-    private MutableComponent getDescription(ResourceLocation id, int level) {
-        final String baseKey = "enchantment." + id.getNamespace() + "." + id.getPath() + ".";
+    private MutableComponent getDescription(Holder<Enchantment> enchantment, ResourceLocation id, int level) {
+        MutableComponent description = getDescription("enchantment." + id.getNamespace() + "." + id.getPath() + ".", level);
+        if (description == null && enchantment.value().description().getContents() instanceof TranslatableContents translatable) {
+            description = getDescription(translatable.getKey() + ".", level);
+        }
+        return description;
+    }
+
+    @Nullable
+    @OnlyFor(PhysicalSide.CLIENT)
+    private MutableComponent getDescription(String baseKey, int level) {
         for (String keyType : KEY_TYPES) {
             String key = baseKey + keyType;
             if (I18n.exists(key)) {
